@@ -19,7 +19,7 @@ export function Blog() {
       category: "Direito Bancário",
       date: "25 Mai 2026",
       author: "Dr. Vinicius Oliveira",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
       excerpt: "[Placeholder] - Insira aqui o resumo ou introdução da notícia sobre Direito Bancário, reequilíbrio de contratos ou juros abusivos. O Dr. Vinicius Oliveira é o autor deste artigo de exemplo."
     },
     {
@@ -28,7 +28,7 @@ export function Blog() {
       category: "Direito de Família",
       date: "22 Mai 2026",
       author: "Dra. Caroliny Alves",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
       excerpt: "[Placeholder] - Insira aqui o resumo ou introdução da notícia sobre planejamento sucessório, divórcios ou concessão de benefícios assistenciais. A Dra. Caroliny Alves é a autora deste artigo de exemplo."
     }
   ];
