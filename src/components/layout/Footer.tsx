@@ -62,7 +62,7 @@ export function Footer() {
                   rel="noopener noreferrer" 
                   className="text-cashmere-500/70 text-xs leading-relaxed hover:text-gold-500 transition-colors"
                 >
-                  Av. Marechal Floriano Peixoto, 1020, Salas 501 e 502, Centro, Campina Grande/PB - CEP: 58400-165
+                  Av. Floriano Peixoto, 546 - Sala 302, Centro, Campina Grande/PB - CEP: 58400-110
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -79,10 +79,10 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-gold-500 shrink-0" />
                 <a 
-                  href="mailto:atendimento@wellemdias.adv.br" 
+                  href="mailto:contato@diasadvocacia.adv.br" 
                   className="text-cashmere-500/70 text-xs hover:text-gold-500 transition-colors"
                 >
-                  atendimento@wellemdias.adv.br
+                  contato@diasadvocacia.adv.br
                 </a>
               </li>
             </ul>

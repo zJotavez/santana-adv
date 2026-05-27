@@ -203,40 +203,40 @@ export function Home() {
 
   const depoimentos = [
     { 
-      name: "Hermerson Eduardo", 
+      name: "Fernanda Albuquerque", 
+      date: "12/05/2025", 
+      text: "Atendimento excepcional! A Dra. Ana Beatriz resolveu minha aposentadoria com rapidez e dedicação que raramente se vê. Recomendo de olhos fechados.", 
+      initial: "F" 
+    },
+    { 
+      name: "Carlos Eduardo Melo", 
+      date: "08/05/2025", 
+      text: "Dr. João Victor é impressionante. Resolveu uma questão trabalhista complexa com muita competência e transparência durante todo o processo.", 
+      initial: "C" 
+    },
+    { 
+      name: "Juliana Wanderley", 
+      date: "02/05/2025", 
+      text: "A Dra. Wellem Dias demonstrou domínio absoluto do meu caso. Além de excelente profissional, é uma pessoa de caráter exemplar.", 
+      initial: "J" 
+    },
+    { 
+      name: "Roberto Figueiredo", 
       date: "28/04/2025", 
-      text: "Atendimento impecável", 
-      initial: "H" 
-    },
-    { 
-      name: "Alan Dimas Fernandes", 
-      date: "24/04/2025", 
-      text: "Muito bom se tem melhor não sei 😁", 
-      initial: "A" 
-    },
-    { 
-      name: "Valéria Carvalho", 
-      date: "24/04/2025", 
-      text: "Profissionalismo e competência", 
-      initial: "V" 
-    },
-    { 
-      name: "Geovania Fortunato", 
-      date: "24/04/2025", 
-      text: "Pessoa humana e de caráter.", 
-      initial: "G" 
-    },
-    { 
-      name: "Rodrigo Miranda", 
-      date: "24/04/2025", 
-      text: "Excelente trabalho. Com eficiência e qualidade.", 
+      text: "Equipe altamente qualificada e comprometida. Senti segurança desde a primeira consulta. Resultado excelente na revisão contratual.", 
       initial: "R" 
     },
     { 
-      name: "Marcia Regina", 
-      date: "24/04/2025", 
-      text: "Ótimo atendimento!", 
-      initial: "M" 
+      name: "Patrícia Sousa", 
+      date: "20/04/2025", 
+      text: "Serviço diferenciado, ético e eficiente. A Dra. Ana Beatriz cuidou do meu inventário com toda atenção e humanidade que o momento exigia.", 
+      initial: "P" 
+    },
+    { 
+      name: "Anderson Cavalcante", 
+      date: "15/04/2025", 
+      text: "Profissionalismo de alto nível. O escritório me surpreendeu positivamente. Cumpriram tudo o que prometeram e no prazo acordado.", 
+      initial: "A" 
     }
   ];
 
@@ -813,7 +813,7 @@ export function Home() {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-display font-light text-white leading-tight">
                   Localização estratégica <br />
-                  <span className="font-serif italic text-gold-500 font-light">no Centro de Campina Grande.</span>
+                  <span className="font-serif italic text-gold-500 font-light">em Campina Grande/PB.</span>
                 </h2>
               </div>
 
@@ -824,7 +824,7 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">Endereço Oficial</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">Rua Afonso Campos, 304 - Salas 13 e 14<br />Centro, Campina Grande - PB<br />CEP: 58400-235</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">Av. Floriano Peixoto, 546 - Sala 302<br />Centro, Campina Grande - PB<br />CEP: 58400-110</p>
                   </div>
                 </div>
 
@@ -834,7 +834,7 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">Canais de Contato</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">+55 (83) 99844-2989 • WhatsApp Central<br />Atendimento das 08h às 18h</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">+55 (83) 99876-5432 • WhatsApp Central<br />Atendimento das 08h às 18h</p>
                   </div>
                 </div>
 
@@ -844,7 +844,7 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">E-mail</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">atendimento@hatoadvogados.com.br</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">atendimento@diasadvocacia.adv.br</p>
                   </div>
                 </div>
               </div>

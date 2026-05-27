@@ -1,85 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Laurel Wreath Stem -->
-  <path
-    d="M 28,45 C 26,62 36,74 50,75"
-    stroke="#ffffff"
-    stroke-width="2.5"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 72,45 C 74,62 64,74 50,75"
-    stroke="#ffffff"
-    stroke-width="2.5"
-    stroke-linecap="round"
-  />
-  
-  <!-- Left Laurel Leaves -->
-  <path d="M 28,45 C 23,43 25,38 28,45 C 31,40 33,43 28,45" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 29,52 C 24,51 25,46 29,52 C 32,48 34,51 29,52" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 32,59 C 27,60 27,55 32,59 C 34,55 37,58 32,59" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 37,66 C 32,68 31,63 37,66 C 39,62 42,65 37,66" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 43,71 C 39,74 37,69 43,71 C 44,67 47,70 43,71" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 
-  <!-- Right Laurel Leaves -->
-  <path d="M 72,45 C 77,43 75,38 72,45 C 69,40 67,43 72,45" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 71,52 C 76,51 75,46 71,52 C 68,48 66,51 71,52" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 68,59 C 73,60 73,55 68,59 C 66,55 63,58 68,59" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 63,66 C 68,68 69,63 63,66 C 61,62 58,65 63,66" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 57,71 C 61,74 63,69 57,71 C 56,67 53,70 57,71" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Fundo escuro navy -->
+  <rect width="100" height="100" fill="#070B19"/>
 
-  {/* Outer U-Shield */}
+  <!-- Coroa de louro - lado esquerdo -->
+  <path d="M 28,48 C 26,64 36,76 50,77" stroke="#B0924F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 28,48 C 23,46 25,41 28,48 C 31,43 33,46 28,48" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 29,55 C 24,54 25,49 29,55 C 32,51 34,54 29,55" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 32,62 C 27,63 27,58 32,62 C 34,58 37,61 32,62" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 37,69 C 32,71 31,66 37,69 C 39,65 42,68 37,69" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 44,74 C 40,77 38,72 44,74 C 45,70 48,73 44,74" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Coroa de louro - lado direito -->
+  <path d="M 72,48 C 74,64 64,76 50,77" stroke="#B0924F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 72,48 C 77,46 75,41 72,48 C 69,43 67,46 72,48" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 71,55 C 76,54 75,49 71,55 C 68,51 66,54 71,55" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 68,62 C 73,63 73,58 68,62 C 66,58 63,61 68,62" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 63,69 C 68,71 69,66 63,69 C 61,65 58,68 63,69" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 56,74 C 60,77 62,72 56,74 C 55,70 52,73 56,74" stroke="#B0924F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Escudo em U -->
   <path
-    d="M 33,26 L 33,56 C 33,68 41,75 50,75 C 59,75 67,68 67,56 L 67,26"
-    stroke="#ffffff"
-    stroke-width="3.8"
+    d="M 33,26 L 33,56 C 33,68 41,77 50,77 C 59,77 67,68 67,56 L 67,26"
+    stroke="#B0924F"
+    stroke-width="3.2"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
 
-  {/* Sword / T - Grip, Pommel, Crossguard & Blade */}
+  <!-- Espada - crossguard -->
+  <path d="M 40,22 L 60,22" stroke="#B0924F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Espada - cabo -->
+  <path d="M 50,22 L 50,12" stroke="#B0924F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Espada - pomo -->
+  <path d="M 45,12 L 55,12" stroke="#B0924F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Espada - lâmina -->
+  <path d="M 50,22 L 50,83 L 46,77 M 50,83 L 54,77" stroke="#B0924F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Monograma D -->
+  <path d="M 41,31 L 41,63" stroke="#B0924F" stroke-width="3.2" stroke-linecap="round"/>
   <path
-    d="M 40,21 L 60,21"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 50,21 L 50,11"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 45,11 L 55,11"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 50,21 L 50,81 L 46,76 M 50,81 L 54,76"
-    stroke="#ffffff"
-    stroke-width="3.5"
+    d="M 41,31 L 50,31 C 62,31 62,63 50,63 L 41,63"
+    stroke="#B0924F"
+    stroke-width="3.2"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
 
-  {/* H Monogram */}
-  <path
-    d="M 42,31 L 42,61"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 58,31 L 58,61"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
-  <path
-    d="M 42,46 L 58,46"
-    stroke="#ffffff"
-    stroke-width="3.8"
-    stroke-linecap="round"
-  />
 </svg>

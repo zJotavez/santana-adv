@@ -90,12 +90,12 @@ export function Contato() {
                     style={{ colorScheme: 'dark' }}
                   >
                     <option className="bg-brand-900" value="">Selecione...</option>
-                    <option className="bg-brand-900" value="empresarial">Direito Empresarial</option>
-                    <option className="bg-brand-900" value="imobiliario">Regularização Imobiliária</option>
-                    <option className="bg-brand-900" value="bancario">Direito Bancário & Juros Abusivos</option>
-                    <option className="bg-brand-900" value="familia">Direito de Família</option>
+                    <option className="bg-brand-900" value="empresarial">Direito Empresarial & Governança</option>
+                    <option className="bg-brand-900" value="familia">Direito de Família & Sucessões</option>
                     <option className="bg-brand-900" value="previdenciario">Previdenciário & Aposentadorias</option>
-                    <option className="bg-brand-900" value="criminal">Defesa Criminal Especializada</option>
+                    <option className="bg-brand-900" value="trabalhista">Direito Trabalhista</option>
+                    <option className="bg-brand-900" value="bancario">Direito Bancário & Juros Abusivos</option>
+                    <option className="bg-brand-900" value="propriedade">Propriedade Intelectual & Marcas</option>
                     <option className="bg-brand-900" value="outro">Outro</option>
                   </select>
                   {errors.subject && <span className="text-red-400 text-xs mt-1 block">{errors.subject.message}</span>}
@@ -145,7 +145,7 @@ export function Contato() {
                       rel="noopener noreferrer" 
                       className="text-cashmere-500/70 text-xs leading-relaxed font-light hover:text-gold-500 transition-colors"
                     >
-                      Av. Marechal Floriano Peixoto, 1020 - Salas 501 e 502<br />Centro, Campina Grande - PB<br />CEP: 58400-165
+                      Av. Floriano Peixoto, 546 - Sala 302<br />Centro, Campina Grande - PB<br />CEP: 58400-110
                     </a>
                   </div>
                 </li>
@@ -172,10 +172,10 @@ export function Contato() {
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1">E-mail</h4>
                     <a 
-                      href="mailto:atendimento@wellemdias.adv.br" 
+                      href="mailto:atendimento@diasadvocacia.adv.br" 
                       className="text-cashmere-500/70 text-xs leading-relaxed font-light hover:text-gold-500 transition-colors"
                     >
-                      atendimento@wellemdias.adv.br
+                      atendimento@diasadvocacia.adv.br
                     </a>
                   </div>
                 </li>
