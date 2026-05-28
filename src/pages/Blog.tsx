@@ -71,7 +71,7 @@ export function Blog() {
       category: "Família & Sucessões",
       date: "22 Ago 2024",
       author: "Administrador",
-      image: "/publi4.webp",
+      image: "/testamento_silvio.png",
       excerpt: "A recente partida do comunicador Sílvio Santos levanta um tema crucial: o testamento e o planejamento sucessório como maiores atos de amor e responsabilidade.",
       content: [
         "Em breve teremos conhecimento detalhado do testamento deixado pelo lendário Sílvio Santos. Esse fato chama a atenção para um tema por vezes evitado, mas essencial.",

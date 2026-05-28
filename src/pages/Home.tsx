@@ -330,13 +330,13 @@ export function Home() {
           >
             <div className="absolute inset-0 bg-[#070B19]/25 z-10 pointer-events-none" />
             <img 
-              src="/equipe.jpg" 
-              alt="Santana Advogados - Banca Reunida" 
-              className="w-full aspect-[3/2] md:aspect-[16/9] object-cover grayscale object-[center_15%] select-none"
+              src="/sede_dct.png" 
+              alt="Santana Advogados - Sede Corporativa no Duo Corporate Tower" 
+              className="w-full aspect-[3/2] md:aspect-[16/9] object-cover grayscale object-center select-none"
             />
             <div className="absolute bottom-6 left-6 z-20 bg-brand-900/90 backdrop-blur-sm px-6 py-4 border border-white/5 max-w-lg hidden sm:block">
-              <p className="text-[10px] tracking-[0.2em] uppercase text-gold-500 mb-1 font-semibold">Time & Multidisciplinaridade</p>
-              <h3 className="text-sm font-display text-white">Nossa banca atua de maneira coordenada e integrada, atendendo o pequeno e médio empresário e pessoas físicas.</h3>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-gold-500 mb-1 font-semibold">Sede João Pessoa - PB</p>
+              <h3 className="text-sm font-display text-white">Nossa sede corporativa está localizada no prestigiado Duo Corporate Tower - DCT, Andar 22, projetada para proporcionar segurança, discrição e excelência aos nossos clientes.</h3>
             </div>
           </motion.div>
 
