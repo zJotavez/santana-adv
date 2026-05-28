@@ -193,19 +193,19 @@ export function Home() {
     { 
       name: "Fernanda Albuquerque", 
       date: "12/05/2025", 
-      text: "Atendimento excepcional! A Dra. Ana Beatriz resolveu minha aposentadoria com rapidez e dedicação que raramente se vê. Recomendo de olhos fechados.", 
+      text: "Atendimento excepcional! O Dr. Marcelo Vieira resolveu meu planejamento previdenciário com rapidez e dedicação que raramente se vê. Recomendo de olhos fechados.", 
       initial: "F" 
     },
     { 
       name: "Carlos Eduardo Melo", 
       date: "08/05/2025", 
-      text: "Dr. João Victor é impressionante. Resolveu uma questão trabalhista complexa com muita competência e transparência durante todo o processo.", 
+      text: "O Dr. Jaksson Santana é impressionante. Resolveu uma questão empresarial complexa com muita competência e transparência durante todo o processo.", 
       initial: "C" 
     },
     { 
       name: "Juliana Wanderley", 
       date: "02/05/2025", 
-      text: "A Dra. Wellem Dias demonstrou domínio absoluto do meu caso. Além de excelente profissional, é uma pessoa de caráter exemplar.", 
+      text: "A Dra. Daiane Garcias demonstrou domínio absoluto do meu caso no processo administrativo. Além de excelente profissional, é uma pessoa de caráter exemplar.", 
       initial: "J" 
     },
     { 
@@ -217,7 +217,7 @@ export function Home() {
     { 
       name: "Patrícia Sousa", 
       date: "20/04/2025", 
-      text: "Serviço diferenciado, ético e eficiente. A Dra. Ana Beatriz cuidou do meu inventário com toda atenção e humanidade que o momento exigia.", 
+      text: "Serviço diferenciado, ético e eficiente. O Dr. Ronnie cuidou do meu inventário com toda atenção e humanidade que o momento exigia.", 
       initial: "P" 
     },
     { 
@@ -590,7 +590,7 @@ export function Home() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800" 
-                  alt="Dias Advocacia - Sala de Reuniões" 
+                  alt="Santana Advogados - Sala de Reuniões" 
                   className="w-full h-full object-cover grayscale opacity-90 hover:opacity-100 transition-opacity duration-750"
                 />
               </motion.div>
@@ -605,7 +605,7 @@ export function Home() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600" 
-                  alt="Dias Advocacia - Biblioteca de Direito" 
+                  alt="Santana Advogados - Biblioteca de Direito" 
                   className="w-full h-full object-cover grayscale opacity-90 hover:opacity-100 transition-opacity duration-750"
                 />
               </motion.div>
@@ -620,7 +620,7 @@ export function Home() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=600" 
-                  alt="Dias Advocacia - Recepção Boutique" 
+                  alt="Santana Advogados - Recepção Sede" 
                   className="w-full h-full object-cover grayscale opacity-90 hover:opacity-100 transition-opacity duration-750 object-top"
                 />
               </motion.div>
