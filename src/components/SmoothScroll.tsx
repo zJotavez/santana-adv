@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 
 export function SmoothScroll({ children }: { children: React.ReactNode }) {

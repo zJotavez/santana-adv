@@ -27,7 +27,7 @@ export function FloatingAI() {
         {
           id: "welcome",
           sender: "bot",
-          text: "Seja muito bem-vindo à **DIAS Advocacia**. Sou o **DIAS AI**, seu assistente jurídico virtual. Para darmos início ao atendimento, com quem tenho a honra de falar?",
+          text: "Seja muito bem-vindo à **Santana Advogados Associados**. Sou o **Santana AI**, seu assistente jurídico virtual. Para darmos início ao atendimento, com quem tenho a honra de falar?",
           timestamp: new Date()
         }
       ]);
@@ -38,9 +38,9 @@ export function FloatingAI() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isTyping]);
 
-  const centralNumber = "5583998442989";
+  const centralNumber = "558321065680";
 
-  // Mapeamento de Especialidades para Advogados do Escritório
+  // Mapeamento de Especialidades para Advogados do Escritório Santana
   const specialtyTriage = (specialtyKey: string, customName?: string) => {
     setIsTyping(true);
     const activeName = customName || userName || "prezado(a)";
@@ -52,47 +52,47 @@ export function FloatingAI() {
 
       switch (specialtyKey) {
         case "empresarial":
-          botResponse = `Compreendo a importância estratégica, prezado(a) **${activeName}**. Suas demandas de **Direito Empresarial e Imobiliário** serão conduzidas pela nossa fundadora, **Dra. Wellem Dias (OAB/PB: 30.120)**. Sob rigor metodológico absoluto, ela desenhará a melhor estratégia jurídica. Deseja iniciar um contato direto com ela via WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Wellem Dias. Gostaria de agendar uma consulta jurídica estratégica sobre Direito Empresarial com suporte da DIAS AI.`)}`;
-          waLabel = "Falar com Dra. Wellem Dias";
+          botResponse = `Compreendo a importância estratégica, prezado(a) **${activeName}**. Suas demandas de **Direito Empresarial, Societário & Imobiliário** serão conduzidas pelo nosso sócio-diretor, **Dr. Jaksson Santana de Jesus (OAB/PB 19.538)**. Sob rigor absoluto, ele desenhará a melhor estratégia. Deseja iniciar um contato direto via WhatsApp?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. Jaksson Santana. Gostaria de agendar uma consulta jurídica especializada em Direito Empresarial com o suporte da Santana AI.`)}`;
+          waLabel = "Falar com Dr. Jaksson Santana";
           break;
         case "tributario":
-          botResponse = `Entendo a sua necessidade, prezado(a) **${activeName}**. Suas demandas de **Direito Empresarial e Planejamento Patrimonial** são geridas pela nossa fundadora, **Dra. Wellem Dias (OAB/PB: 30.120)**, com sólida atuação combativa. Deseja iniciar uma conversa de agendamento no WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Wellem Dias. Preciso de suporte especializado em Direito Empresarial / Planejamento Patrimonial.`)}`;
-          waLabel = "Falar com Dra. Wellem Dias";
+          botResponse = `Entendo a sua necessidade, prezado(a) **${activeName}**. Suas demandas de **Planejamento Tributário & Consultoria Fiscal** serão avaliadas pelo **Dr. Jaksson Santana (OAB/PB 19.538)**. Deseja iniciar uma conversa de agendamento no WhatsApp?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. Jaksson Santana. Preciso de suporte em Direito Tributário / Consultoria Fiscal.`)}`;
+          waLabel = "Falar com Dr. Jaksson Santana";
           break;
         case "bancario":
-          botResponse = `Perfeitamente, prezado(a) **${activeName}**. Cobranças indevidas e **Revisão de Juros** exigem ação célere. O especialista sênior que lidera nossa divisão de **Direito Bancário e Propriedade Intelectual** é o **Dr. João Victor (OAB/PB: 36.890)**. Ele atuará firmemente para reequilibrar seus contratos. Deseja contatá-lo via WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. João Victor. Gostaria de uma análise estratégica do meu contrato bancário / revisão de juros.`)}`;
-          waLabel = "Falar com Dr. João Victor";
+          botResponse = `Perfeitamente, prezado(a) **${activeName}**. A análise de contratos bancários e mitigação de juros abusivos exige precisão. O **Dr. Jaksson Santana (OAB/PB 19.538)** coordena essa frente em nossa banca. Deseja contatá-lo via WhatsApp para agendamento?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. Jaksson Santana. Gostaria de uma análise do meu contrato bancário / revisão de juros.`)}`;
+          waLabel = "Falar com Dr. Jaksson Santana";
           break;
         case "civil":
-          botResponse = `Compreendido, prezado(a) **${activeName}**. A análise técnica de **Contratos e Propriedade Intelectual** requer cuidados boutique. O **Dr. João Victor (OAB/PB: 36.890)** coordena essas frentes em nossa banca, assegurando a defesa de seus direitos. Vamos iniciar um contato com ele via WhatsApp agora?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. João Victor. Gostaria de tirar dúvidas sobre Propriedade Intelectual / Revisão Contratual.`)}`;
-          waLabel = "Falar com Dr. João Victor";
+          botResponse = `Compreendido, prezado(a) **${activeName}**. Questões de **Direito Civil e Defesa do Consumidor** exigem know-how boutique. O **Dr. Julihermes de Sá Bezerra (OAB/PB 20.345)** é nosso especialista dedicado a essa frente. Vamos iniciar um contato com ele via WhatsApp agora?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. Julihermes de Sá. Gostaria de tirar dúvidas sobre Direito Civil / Relações de Consumidor.`)}`;
+          waLabel = "Falar com Dr. Julihermes";
           break;
         case "trabalhista":
-          botResponse = `Compreendido, prezado(a) **${activeName}**. Para consultoria preventiva ou mitigação de passivos trabalhistas, o **Dr. João Victor (OAB/PB: 36.890)** é nosso especialista dedicado em **Direito Trabalhista**. Gostaria de ser direcionado(a) ao canal dele no WhatsApp para agendamento?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dr. João Victor. Gostaria de suporte estratégico sobre demandas trabalhistas.`)}`;
-          waLabel = "Falar com Dr. João Victor";
+          botResponse = `Compreendido, prezado(a) **${activeName}**. Para consultoria preventiva de empregadores, contencioso trabalhista ou contratos de emprego, a **Dra. Jadisma Figueiredo (OAB/PB 29.953)** é nossa especialista dedicada. Gostaria de iniciar o contato via WhatsApp?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Jadisma Figueiredo. Gostaria de suporte estratégico sobre demandas de emprego / trabalhistas.`)}`;
+          waLabel = "Falar com Dra. Jadisma";
           break;
         case "familia":
-          botResponse = `Compreendo a sensibilidade do caso, prezado(a) **${activeName}**. Divórcios, partilhas e inventários exigem atendimento humanizado e **absoluto sigilo**. A especialista sênior coordenadora desta área é a **Dra. Ana Beatriz (OAB/PB: 35.412)**. Deseja abrir um canal seguro de agendamento com ela no WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Ana Beatriz. Gostaria de agendar um atendimento sigiloso sobre Direito de Família / Sucessões.`)}`;
-          waLabel = "Falar com Dra. Ana Beatriz";
+          botResponse = `Compreendo a sensibilidade do caso, prezado(a) **${activeName}**. Inventários, divórcios e partilhas exigem atendimento humanizado e **absoluto sigilo**. O **Dr. Ronnie Menezes (OAB/PB 24.035)** ou a **Dra. Yonara Kelly (OAB/PB 20.368)** coordenam essas frentes. Deseja abrir um canal seguro de agendamento no WhatsApp?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Yonara Kelly / Dr. Ronnie. Gostaria de agendar um atendimento sigiloso sobre Direito de Família / Inventário.`)}`;
+          waLabel = "Falar com o Especialista";
           break;
         case "previdenciario":
-          botResponse = `Entendo a relevância, prezado(a) **${activeName}**. Concessões de **Aposentadorias e Benefícios (INSS)** requerem planejamento criterioso. Nossa especialista dedicada é a **Dra. Ana Beatriz (OAB/PB: 35.412)**, que cuidará de toda a tramitação ágil. Gostaria de contatá-la via WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Ana Beatriz. Gostaria de agendar uma consulta estratégica sobre Aposentadoria / Benefício Previdenciário.`)}`;
-          waLabel = "Falar com Dra. Ana Beatriz";
+          botResponse = `Entendo a relevância, prezado(a) **${activeName}**. Planejamento Previdenciário e concessão de **Aposentadorias e Benefícios do INSS** são frentes capitaneadas pelo **Dr. Marcelo Vieira da Silva (OAB/PB 22.100)**, **Dra. Cristiane Queiroz (OAB/PB 12.270)** e **Dra. Gerlania Dantas (OAB/PB 20.317)**. Gostaria de falar com nossa divisão previdenciária?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá. Gostaria de agendar uma consulta sobre Aposentadoria / Planejamento Previdenciário.`)}`;
+          waLabel = "Falar com Previdenciário";
           break;
         case "criminal":
-          botResponse = `Urgência compreendida, prezado(a) **${activeName}**. Nossa banca poderá orientá-lo(a) no encaminhamento adequado da demanda. Gostaria de ser transferido(a) agora para o canal central da **DIAS Advocacia** no WhatsApp?`;
-          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, DIAS Advocacia. Preciso de suporte jurídico urgente.`)}`;
-          waLabel = "Falar com a Banca DIAS";
+          botResponse = `Urgência compreendida, prezado(a) **${activeName}**. Suas demandas na área de **Direito Criminal & Ciências Criminais** serão assessoradas pela **Dra. Yonara Kelly Alves de Brito (OAB/PB 20.368)** ou pelo **Dr. Ronnie Menezes (OAB/PB 24.035)**. Deseja ser transferido(a) para o WhatsApp agora?`;
+          waLink = `https://wa.me/${centralNumber}?text=${encodeURIComponent(`Olá, Dra. Yonara Kelly / Dr. Ronnie. Preciso de assessoria jurídica urgente na área Criminal.`)}`;
+          waLabel = "Falar com a Banca Santana";
           break;
         default:
-          botResponse = `Compreendo, prezado(a) **${activeName}**. Como advocacia boutique, atuamos com absoluto rigor nas principais áreas cíveis e corporativas. Qual das especialidades melhor atende à sua necessidade jurídica atual?`;
+          botResponse = `Compreendo, prezado(a) **${activeName}**. Como banca multidisciplinar, atuamos com absoluto rigor cível, empresarial e público. Qual das especialidades melhor atende à sua necessidade jurídica atual?`;
           break;
       }
 
@@ -111,28 +111,28 @@ export function FloatingAI() {
     }, 1000);
   };
 
-  // Motor de palavras-chave NLP Conversacional
+  // Motor de palavras-chave NLP Conversacional do Escritório Santana
   const processInputText = (text: string) => {
     const query = text.toLowerCase();
     const activeName = userName || "prezado(a)";
 
-    if (query.includes("banco") || query.includes("bancario") || query.includes("bancário") || query.includes("divida") || query.includes("dívida") || query.includes("juros") || query.includes("abusivo") || query.includes("abusivos") || query.includes("emprestimo") || query.includes("financiamento") || query.includes("carro") || query.includes("veiculo") || query.includes("leilao") || query.includes("leilão") || query.includes("apreensao") || query.includes("apreensão")) {
+    if (query.includes("banco") || query.includes("bancario") || query.includes("bancário") || query.includes("juros") || query.includes("abusivo") || query.includes("abusivos") || query.includes("leilao") || query.includes("leilão") || query.includes("dívida") || query.includes("divida") || query.includes("financiamento")) {
       specialtyTriage("bancario", activeName);
-    } else if (query.includes("empresa") || query.includes("empresarial") || query.includes("societario") || query.includes("societário") || query.includes("compliance") || query.includes("governança") || query.includes("fusao") || query.includes("regularização") || query.includes("regularizacao") || query.includes("imovel") || query.includes("imóvel") || query.includes("imobiliário") || query.includes("imobiliaria") || query.includes("terreno") || query.includes("escritura") || query.includes("usucapiao")) {
+    } else if (query.includes("empresa") || query.includes("empresarial") || query.includes("societario") || query.includes("societário") || query.includes("compliance") || query.includes("startup") || query.includes("cotistas") || query.includes("contrato mercanti") || query.includes("franquia") || query.includes("regularização") || query.includes("regularizacao") || query.includes("imóvel") || query.includes("imovel") || query.includes("imobiliário") || query.includes("imobiliaria") || query.includes("vizinhança")) {
       specialtyTriage("empresarial", activeName);
-    } else if (query.includes("contrato") || query.includes("consumidor") || query.includes("revisão") || query.includes("revisao") || query.includes("civil") || query.includes("cdc") || query.includes("danos") || query.includes("indenizacao") || query.includes("processar")) {
+    } else if (query.includes("contrato") || query.includes("consumidor") || query.includes("revisão") || query.includes("revisao") || query.includes("civil") || query.includes("cdc") || query.includes("danos") || query.includes("indenizacao") || query.includes("processar") || query.includes("vizinho")) {
       specialtyTriage("civil", activeName);
-    } else if (query.includes("trabalho") || query.includes("trabalhista") || query.includes("emprego") || query.includes("demissao") || query.includes("clt") || query.includes("fgts") || query.includes("carteira")) {
+    } else if (query.includes("trabalho") || query.includes("trabalhista") || query.includes("emprego") || query.includes("demissao") || query.includes("clt") || query.includes("demissão") || query.includes("trabalhador") || query.includes("patrao") || query.includes("patrão")) {
       specialtyTriage("trabalhista", activeName);
-    } else if (query.includes("familia") || query.includes("família") || query.includes("divorcio") || query.includes("divórcio") || query.includes("partilha") || query.includes("inventario") || query.includes("inventário") || query.includes("herança") || query.includes("pensao") || query.includes("guarda") || query.includes("casamento")) {
+    } else if (query.includes("familia") || query.includes("família") || query.includes("divorcio") || query.includes("divórcio") || query.includes("partilha") || query.includes("inventario") || query.includes("inventário") || query.includes("herança") || query.includes("guarda") || query.includes("sucessões") || query.includes("sucessao")) {
       specialtyTriage("familia", activeName);
-    } else if (query.includes("aposentadoria") || query.includes("previdenciario") || query.includes("previdenciário") || query.includes("beneficio") || query.includes("benefício") || query.includes("loas") || query.includes("bpc") || query.includes("inss") || query.includes("auxilio")) {
+    } else if (query.includes("aposentadoria") || query.includes("previdenciario") || query.includes("previdenciário") || query.includes("beneficio") || query.includes("benefício") || query.includes("inss") || query.includes("auxilio") || query.includes("doença ocupacional") || query.includes("loas") || query.includes("bpc")) {
       specialtyTriage("previdenciario", activeName);
-    } else if (query.includes("criminal") || query.includes("vítima") || query.includes("vitima") || query.includes("policia") || query.includes("delegacia") || query.includes("crime") || query.includes("processo penal") || query.includes("defesa criminal") || query.includes("prisao") || query.includes("prisão")) {
+    } else if (query.includes("criminal") || query.includes("delegacia") || query.includes("crime") || query.includes("prisao") || query.includes("prisão") || query.includes("defesa criminal") || query.includes("processo penal")) {
       specialtyTriage("criminal", activeName);
-    } else if (query.includes("admin") || query.includes("servidor") || query.includes("publico") || query.includes("público") || query.includes("concurso") || query.includes("prefeitura") || query.includes("estado") || query.includes("tributario") || query.includes("tributário")) {
+    } else if (query.includes("servidor") || query.includes("publico") || query.includes("público") || query.includes("concurso") || query.includes("tributario") || query.includes("tributário") || query.includes("sindicância") || query.includes("processo administrativo") || query.includes("disciplinar") || query.includes("pad") || query.includes("improbidade") || query.includes("erário")) {
       specialtyTriage("tributario", activeName);
-    } else if (query.includes("endereco") || query.includes("endereço") || query.includes("onde") || query.includes("localizacao") || query.includes("localização") || query.includes("fica") || query.includes("campina")) {
+    } else if (query.includes("endereco") || query.includes("endereço") || query.includes("onde") || query.includes("localizacao") || query.includes("localização") || query.includes("fica") || query.includes("joao pessoa") || query.includes("joão pessoa") || query.includes("campina")) {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
@@ -141,9 +141,9 @@ export function FloatingAI() {
           {
             id: Math.random().toString(),
             sender: "bot",
-            text: `Nossa sede está localizada no Centro de Campina Grande/PB, na **Rua Afonso Campos, 304 - Salas 13 e 14**. Teremos a honra de recebê-lo(a) para uma consulta. Deseja abrir a rota no Google Maps?`,
+            text: `Nossa sede está localizada no prestigiado Duo Corporate Tower - DCT, no 22º Andar, SL 2201, João Pessoa - PB. CEP: 58028-873. Também atendemos em estrutura híbrida. Deseja abrir a localização no Google Maps?`,
             timestamp: new Date(),
-            whatsappLink: "https://share.google/OqIFiSvPTdZo2Divq",
+            whatsappLink: "https://www.google.com/maps?ll=-7.156633,-35.372381&z=14&t=m&hl=pt-BR&gl=US&mapclient=embed&q=DCT+Santana+Advogados",
             whatsappLabel: "Abrir Google Maps"
           }
         ]);
@@ -157,7 +157,7 @@ export function FloatingAI() {
           {
             id: Math.random().toString(),
             sender: "bot",
-            text: `Olá, prezado(a) **${activeName}**. Estou à disposição para triar seu caso com rigor ético. Qual das especialidades abaixo mais se assemelha ao seu cenário jurídico atual?`,
+            text: `Olá, prezado(a) **${activeName}**. Estou à disposição para triar seu caso com o devido sigilo. Qual das especialidades abaixo melhor atende à sua necessidade jurídica atual?`,
             timestamp: new Date()
           }
         ]);
@@ -171,7 +171,7 @@ export function FloatingAI() {
           {
             id: Math.random().toString(),
             sender: "bot",
-            text: `Compreendo, prezado(a) **${activeName}**. Para direcionar seu caso ao especialista de nossa banca, por favor selecione a área abaixo ou descreva seu caso brevemente.`,
+            text: `Compreendo, prezado(a) **${activeName}**. Para direcionar seu caso ao especialista de nossa banca multidisciplinar, por favor selecione a área abaixo ou descreva seu caso brevemente.`,
             timestamp: new Date()
           }
         ]);
@@ -226,7 +226,7 @@ export function FloatingAI() {
           {
             id: Math.random().toString(),
             sender: "bot",
-            text: `É uma honra, prezado(a) **${displayName}**. A DIAS Advocacia atua sob rigor absoluto. Para direcioná-lo(a) ao especialista correto de nossa banca, qual demanda jurídica necessita de nossa intervenção hoje? (Ou selecione uma das opções abaixo)`,
+            text: `É uma honra, prezado(a) **${displayName}**. A Santana Advogados Associados atua sob rigor absoluto. Para direcioná-lo(a) ao especialista correto de nossa banca, qual demanda jurídica necessita de nossa intervenção hoje? (Ou selecione uma das opções abaixo)`,
             timestamp: new Date()
           }
         ]);
@@ -322,11 +322,11 @@ export function FloatingAI() {
             <div className="p-4 border-b border-white/5 bg-brand-800 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full overflow-hidden border border-gold-500/30 relative shrink-0">
-                  <img src="/wellem_dias.jpg" alt="Dra. Wellem Dias" className="w-full h-full object-cover object-top" />
+                  <img src="/Adv Jaksson.jpg" alt="Dr. Jaksson Santana" className="w-full h-full object-cover object-top" />
                   <span className="absolute bottom-0 right-0 w-2 h-2 bg-green-500 rounded-full border border-brand-800 z-10" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-display font-medium text-white text-sm">DIAS AI</span>
+                  <span className="font-display font-medium text-white text-sm">SANTANA AI</span>
                   <span className="text-[9px] uppercase tracking-widest text-gold-500 font-semibold font-sans">Triagem Jurídica Conversacional</span>
                 </div>
               </div>

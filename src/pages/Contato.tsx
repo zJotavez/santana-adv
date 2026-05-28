@@ -8,26 +8,29 @@ const formSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
   email: z.string().email("E-mail inválido"),
   phone: z.string().min(10, "Telefone é obrigatório"),
-  subject: z.string().min(2, "Assunto é obrigatório"),
+  subject: z.string().min(2, "Área de interesse é obrigatória"),
   message: z.string().min(10, "Mensagem é obrigatória")
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 export function Contato() {
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormValues>({
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<FormValues>({
     resolver: zodResolver(formSchema)
   });
 
   const onSubmit = async (data: FormValues) => {
     await new Promise(resolve => setTimeout(resolve, 1500));
     console.log(data);
-    alert("Mensagem enviada com sucesso!");
+    alert("Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.");
+    reset();
   };
 
   return (
-    <div className="pt-36 pb-24 min-h-screen bg-brand-900">
+    <div className="pt-36 pb-24 min-h-screen bg-brand-900 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,6 +47,7 @@ export function Contato() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          
           {/* Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -77,7 +81,7 @@ export function Contato() {
                   <label className="block text-[9px] uppercase tracking-[0.25em] text-gold-500/70 font-semibold mb-1">Telefone / WhatsApp</label>
                   <input 
                     {...register("phone")}
-                    placeholder="+55 (11) 99999-9999"
+                    placeholder="(83) 99999-9999"
                     className="w-full bg-transparent border-b border-white/10 px-0 py-3 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors placeholder:text-white/20 font-light"
                   />
                   {errors.phone && <span className="text-red-400 text-xs mt-1 block">{errors.phone.message}</span>}
@@ -90,13 +94,11 @@ export function Contato() {
                     style={{ colorScheme: 'dark' }}
                   >
                     <option className="bg-brand-900" value="">Selecione...</option>
-                    <option className="bg-brand-900" value="empresarial">Direito Empresarial & Governança</option>
-                    <option className="bg-brand-900" value="familia">Direito de Família & Sucessões</option>
-                    <option className="bg-brand-900" value="previdenciario">Previdenciário & Aposentadorias</option>
-                    <option className="bg-brand-900" value="trabalhista">Direito Trabalhista</option>
-                    <option className="bg-brand-900" value="bancario">Direito Bancário & Juros Abusivos</option>
-                    <option className="bg-brand-900" value="propriedade">Propriedade Intelectual & Marcas</option>
-                    <option className="bg-brand-900" value="outro">Outro</option>
+                    <option className="bg-brand-900" value="civil_admin">Contencioso Civil &amp; Administrativo</option>
+                    <option className="bg-brand-900" value="empresarial_societario">Empresarial, Societário &amp; Imobiliário</option>
+                    <option className="bg-brand-900" value="tributario_prev">Tributário, Emprego &amp; Previdenciário</option>
+                    <option className="bg-brand-900" value="disciplinar_familia">Processo Disciplinar, Arbitragem &amp; Família</option>
+                    <option className="bg-brand-900" value="outro">Outro Assunto</option>
                   </select>
                   {errors.subject && <span className="text-red-400 text-xs mt-1 block">{errors.subject.message}</span>}
                 </div>
@@ -107,7 +109,7 @@ export function Contato() {
                 <textarea 
                   {...register("message")}
                   rows={4}
-                  placeholder="Descreva resumidamente sua necessidade jurídica corporativa ou individual..."
+                  placeholder="Descreva resumidamente suas expectativas e necessidades jurídicas..."
                   className="w-full bg-transparent border-b border-white/10 px-0 py-3 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors resize-none placeholder:text-white/20 font-light"
                 />
                 {errors.message && <span className="text-red-400 text-xs mt-1 block">{errors.message.message}</span>}
@@ -140,12 +142,14 @@ export function Contato() {
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1">Nosso Endereço</h4>
                     <a 
-                      href="https://share.google/OqIFiSvPTdZo2Divq" 
+                      href="https://www.google.com/maps?ll=-7.156633,-35.372381&z=14&t=m&hl=pt-BR&gl=US&mapclient=embed&q=DCT+Santana+Advogados" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="text-cashmere-500/70 text-xs leading-relaxed font-light hover:text-gold-500 transition-colors"
                     >
-                      Av. Floriano Peixoto, 546 - Sala 302<br />Centro, Campina Grande - PB<br />CEP: 58400-110
+                      R. Emp. Clóvis Rolim, 2051, Torre Sul, 22ª Andar - SL 2201.<br />
+                      Duo Corporate Tower - DCT, João Pessoa - PB<br />
+                      CEP 58028-873
                     </a>
                   </div>
                 </li>
@@ -156,12 +160,12 @@ export function Contato() {
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1">Contato Telefônico</h4>
                     <a 
-                      href="https://wa.me/5583998765432" 
+                      href="https://wa.me/558321065680" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="text-cashmere-500/70 text-xs leading-relaxed font-light hover:text-gold-500 transition-colors"
                     >
-                      +55 (83) 99876-5432 (WhatsApp Central)
+                      (83) 2106-5680 (WhatsApp / Central)
                     </a>
                   </div>
                 </li>
@@ -172,10 +176,10 @@ export function Contato() {
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1">E-mail</h4>
                     <a 
-                      href="mailto:atendimento@diasadvocacia.adv.br" 
+                      href="mailto:escritorio@stna.adv.br" 
                       className="text-cashmere-500/70 text-xs leading-relaxed font-light hover:text-gold-500 transition-colors"
                     >
-                      atendimento@diasadvocacia.adv.br
+                      escritorio@stna.adv.br
                     </a>
                   </div>
                 </li>
@@ -184,8 +188,8 @@ export function Contato() {
               {/* Styled Google Maps iframe directly integrated */}
               <div className="w-full h-[280px] relative border border-white/[0.05] shadow-2xl overflow-hidden group">
                 <iframe
-                  title="Google Maps Dias Advocacia Contato"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.406981440786!2d-35.8848772!3d-7.2287239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aee0f9191d9b3d%3A0x6e2a2223fa8c9d4b!2sR.%20Afonso%20Campos%2C%20304%20-%20Centro%2C%20Campina%20Grande%20-%20PB%2C%2058400-235!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                  title="Google Maps Santana Advogados Contato"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2709230557434!2d-34.8582239!3d-7.1003714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace799147eb221%3A0x9a84a6c4295e2d1d!2sDuo%20Corporate%20Tower%20-%20DCT!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
                   className="w-full h-full border-0 dark-map absolute inset-0 z-10 transition-all duration-700"
                   allowFullScreen={false}
                   loading="lazy"

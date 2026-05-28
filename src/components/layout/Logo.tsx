@@ -86,29 +86,23 @@ export function Logo({ className, size = 36, showText = true, textColor = "text-
           strokeLinejoin="round"
         />
 
-        {/* D Monogram (Left vertical bar and curvature) */}
+        {/* S Monogram (Elegant customized curve) */}
         <path
-          d="M 42,31 L 42,61"
-          stroke="currentColor"
-          strokeWidth="3.2"
-          strokeLinecap="round"
-        />
-        <path
-          d="M 42,31 L 50,31 C 58,31 58,61 50,61 L 42,61"
+          d="M 56,34 C 56,29 44,29 44,37 C 44,45 56,45 56,53 C 56,61 44,61 44,56"
           stroke="currentColor"
           strokeWidth="3.2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
       </svg>
-
+ 
       {showText && (
         <div className="flex flex-col">
-          <span className={cn("font-display font-medium tracking-[0.2em] text-sm md:text-base leading-none transition-colors group-hover:text-gold-500 duration-500", textColor)}>
-            DIAS
+          <span className={cn("font-display font-medium tracking-[0.15em] text-sm md:text-base leading-none transition-colors group-hover:text-gold-500 duration-500", textColor)}>
+            SANTANA
           </span>
-          <span className="font-sans text-[8px] uppercase tracking-[0.4em] text-cashmere-500">
-            Advocacia
+          <span className="font-sans text-[7px] uppercase tracking-[0.3em] text-cashmere-500 mt-1">
+            Advogados
           </span>
         </div>
       )}

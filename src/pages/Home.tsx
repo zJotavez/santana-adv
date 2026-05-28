@@ -134,70 +134,58 @@ export function Home() {
 
   const team = [
     {
-      id: "wellem",
-      name: "Dra. Wellem Dias",
-      role: "Fundadora • Diretora Executiva",
-      oab: "OAB/PB: 30.120",
-      spec: "Direito Empresarial, Família e Planejamento Patrimonial",
-      image: "/wellem_dias.jpg",
-      bio: "Especialista em Direito Empresarial, Governança Corporativa e Sucessões. Atuação estratégica com foco em resultados rápidos, seguros e eficientes."
+      id: "jaksson",
+      name: "Dr. Jaksson Santana",
+      role: "Sócio-Diretor • Diretor Jurídico",
+      oab: "OAB/PB: 19.538",
+      spec: "Direito Empresarial, Contratos Mercantis, Civil e Tributário",
+      image: "/Adv Jaksson.jpg",
+      bio: "Diretor Jurídico do escritório Santana, Adv. Especialista em Direito Empresarial pela UCAM/RJ e Direito Tributário pela ESA/PB. Ampla atuação em consultoria empresarial, preventiva e estruturação societária."
     },
     {
-      id: "ana",
-      name: "Dra. Ana Beatriz",
+      id: "daiane",
+      name: "Dra. Daiane Garcias",
       role: "Advogada Associada Sênior",
-      oab: "OAB/PB: 35.412",
-      spec: "Direito de Família, Previdenciário (Aposentadorias e Benefícios)",
-      image: "/ana_beatriz.jpg",
-      bio: "Atendimento humanizado na concessão de aposentadorias, benefícios previdenciários, divórcios e planejamentos de partilha de bens."
+      oab: "OAB/PB: 14.889",
+      spec: "Regime de Servidores Públicos, Concursos e Direito Administrativo",
+      image: "/daiane2.jpg",
+      bio: "Doutora em Ciências Jurídicas e Sociais. Autora de obras jurídicas e especialista dedicada a frentes de Direito Administrativo, Licitações, Defesas de Servidores e Sindicâncias."
     },
     {
-      id: "joao",
-      name: "Dr. João Victor",
+      id: "marcelo",
+      name: "Dr. Marcelo Vieira",
       role: "Advogado Associado Sênior",
-      oab: "OAB/PB: 36.890",
-      spec: "Direito Trabalhista, Propriedade Intelectual e Direito Bancário",
-      image: "/joao_victor.jpg",
-      bio: "Foco na mitigação de riscos contratuais, reequilíbrio de contratos financeiros abusivos e na proteção estratégica de marcas e patentes."
+      oab: "OAB/PB: 22.100",
+      spec: "Planejamento Previdenciário e Aposentadorias (INSS)",
+      image: "/Marcelo Vieira da Silva.jpg",
+      bio: "Especialista em Prática Judicante pela ESMA/PB. Dedicado à consultoria previdenciária de alta performance, concessão de aposentadorias de regimes diversos e planejamento previdenciário."
     }
   ];
 
   const especialidades = [
     { 
       id: 1, 
-      title: "Direito Empresarial", 
-      desc: "Consultoria corporativa preventiva, estruturação societária, compliance, governança e contratos estratégicos.",
-      bg: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
+      title: "Contencioso Civil & Administrativo", 
+      desc: "Defesas em improbidade administrativa, sindicâncias, concurso público, mandados de segurança e regime jurídico do servidor público.",
+      bg: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600"
     },
     { 
       id: 2, 
-      title: "Regularização Imobiliária", 
-      desc: "Regularizações de imóveis urbanos e rurais, auditoria de riscos documentais e segurança nas transações imobiliárias.",
-      bg: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600"
+      title: "Empresarial, Societário & Imobiliário", 
+      desc: "Assessoria societária e consultiva para PMEs, acordo de sócios, reestruturações, contratos mercantis e transações imobiliárias.",
+      bg: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
     },
     { 
       id: 3, 
-      title: "Direito Bancário & Juros Abusivos", 
-      desc: "Revisão judicial de contratos bancários abusivos, suspensão de leilões e repactuação de dívidas de alta complexidade.",
+      title: "Tributário, Emprego & Previdenciário", 
+      desc: "Planejamento tributário, defesa contra autos de infração fiscal, relações de emprego, contratos trabalhistas e benefícios previdenciários.",
       bg: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600"
     },
     { 
       id: 4, 
-      title: "Direito de Família", 
-      desc: "Sucessões, partilha patrimonial, inventários rápidos, divórcios consensuais e litígios com máximo sigilo e respeito.",
+      title: "Arbitragem, Inventário & Família", 
+      desc: "Sucessões, partilha patrimonial familiar, divórcios consensuais e litígiosos com máximo sigilo, arbitragem e sindicâncias.",
       bg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600"
-    },
-    { 
-      id: 5, 
-      title: "Previdenciário & Aposentadorias", 
-      desc: "Planejamento previdenciário, concessão de aposentadorias de regimes diversos e benefícios assistenciais no INSS.",
-      bg: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=600"
-    },
-    { 
-      id: 6, 
-      title: "Defesa Criminal Especializada", 
-      desc: "Atuação criminal contundente nos tribunais estaduais e federais, e assistência especializada completa a vítimas.",
-      bg: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600"
     }
   ];
 
@@ -253,7 +241,7 @@ export function Home() {
         >
           <img 
             src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000" 
-            alt="Dias Advocacia - Escritório de Advocacia" 
+            alt="Santana Advogados - Escritório de Advocacia" 
             className="w-full h-full object-cover grayscale contrast-115 brightness-[0.55] object-center"
           />
         </motion.div>
@@ -272,21 +260,21 @@ export function Home() {
           >
             <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-6">
               <div className="w-8 h-px bg-gold-500" />
-              <span className="text-[10px] uppercase tracking-[0.4em] font-medium text-gold-500">DIAS ADVOCACIA</span>
+              <span className="text-[10px] uppercase tracking-[0.4em] font-medium text-gold-500">SANTANA ADVOGADOS</span>
             </motion.div>
             
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-display font-extralight tracking-tight leading-[1.05] text-cashmere-300 mb-8">
               Defendendo direitos com <br/> 
-              <span className="font-serif italic font-light text-gold-500 select-none">estratégia & prestígio.</span>
+              <span className="font-serif italic font-light text-gold-500 select-none">lisura & qualidade.</span>
             </motion.h1>
             
             <motion.p variants={fadeInUp} className="text-base md:text-lg text-cashmere-500/80 mb-10 max-w-2xl leading-relaxed font-light text-balance">
-              Sob a leadership da Dra. Wellem Dias, atuamos com rigor, ética e método absoluto para construir soluções jurídicas ágeis, eficientes e responsáveis.
+              Banca estruturada para atender o pequeno e médio empresário e pessoas físicas com orientação franca, segura, eficaz e visão global de negócios.
             </motion.p>
             
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-5">
               <a 
-                href="https://wa.me/5583998765432?text=Ol%C3%A1%2C%20DIAS%20Advocacia.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico%20especializado."
+                href="https://wa.me/558321065680?text=Ol%C3%A1%2C%20Santana%20Advogados.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico%20especializado."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-gold-500 text-brand-900 font-semibold uppercase text-[10px] tracking-[0.25em] text-center hover:bg-gold-400 hover:scale-[1.02] transition-all duration-500 ease-out flex items-center justify-center gap-2 group shadow-xl shadow-gold-500/10 w-full sm:w-auto"
@@ -313,7 +301,7 @@ export function Home() {
       <section className="py-6 bg-brand-800 border-y border-gold-500/15 overflow-hidden relative z-20 select-none">
         <div className="flex whitespace-nowrap overflow-hidden">
           <div className="animate-marquee flex items-center gap-16 text-gold-500/85 font-display font-light text-sm tracking-[0.25em] uppercase">
-            <span>DIAS ADVOCACIA • ÉTICA E TRANSPARÊNCIA • MÉTODO E RIGOR ESTRATÉGICO • COMPROMISSO COM O CLIENTE • DIAS ADVOCACIA • ÉTICA E TRANSPARÊNCIA • MÉTODO E RIGOR ESTRATÉGICO • COMPROMISSO COM O CLIENTE •</span>
+            <span>SANTANA ADVOGADOS • LISURA E QUALIDADE JURÍDICA • DIÁLOGO E GESTÃO DE CONFORMIDADE • EXPERIÊNCIA E MULTIDISCIPLINARIDADE • SANTANA ADVOGADOS • LISURA E QUALIDADE JURÍDICA • DIÁLOGO E GESTÃO DE CONFORMIDADE • EXPERIÊNCIA E MULTIDISCIPLINARIDADE •</span>
           </div>
         </div>
       </section>
@@ -325,11 +313,11 @@ export function Home() {
           <div className="text-center flex flex-col items-center mb-16">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-8 h-px bg-gold-500" />
-              <span className="text-gold-500 font-medium tracking-[0.25em] uppercase text-xs">Membros da Banca</span>
+              <span className="text-gold-500 font-medium tracking-[0.25em] uppercase text-xs">Nosso Time</span>
               <div className="w-8 h-px bg-gold-500" />
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-white max-w-4xl leading-[1.15] text-balance">
-              Corpo jurídico de elite focado em <span className="font-serif italic text-gold-500 font-light">soluções estratégicas.</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-white max-w-4xl leading-[1.1] text-balance">
+              Corpo jurídico multidisciplinar focado em <span className="font-serif italic text-gold-500 font-light">soluções eficientes.</span>
             </h2>
           </div>
 
@@ -343,12 +331,12 @@ export function Home() {
             <div className="absolute inset-0 bg-[#070B19]/25 z-10 pointer-events-none" />
             <img 
               src="/equipe.jpg" 
-              alt="Dias Advocacia - Banca de Advogados Reunida" 
+              alt="Santana Advogados - Banca Reunida" 
               className="w-full aspect-[3/2] md:aspect-[16/9] object-cover grayscale object-[center_15%] select-none"
             />
             <div className="absolute bottom-6 left-6 z-20 bg-brand-900/90 backdrop-blur-sm px-6 py-4 border border-white/5 max-w-lg hidden sm:block">
-              <p className="text-[10px] tracking-[0.2em] uppercase text-gold-500 mb-1 font-semibold">Liderança & Método</p>
-              <h3 className="text-sm font-display text-white">Nossa condução jurídica apoia-se no entendimento profundo do problema e em execução meticulosamente documentada.</h3>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-gold-500 mb-1 font-semibold">Time & Multidisciplinaridade</p>
+              <h3 className="text-sm font-display text-white">Nossa banca atua de maneira coordenada e integrada, atendendo o pequeno e médio empresário e pessoas físicas.</h3>
             </div>
           </motion.div>
 
@@ -566,17 +554,17 @@ export function Home() {
                 <span className="text-gold-500 font-medium tracking-[0.25em] uppercase text-xs">Sobre o Escritório</span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-white mb-8 leading-[1.15] text-balance">
-                Ética, transparência e <span className="font-serif italic text-gold-500 font-light">condução criteriosa.</span>
+                Orientação franca, segura e <span className="font-serif italic text-gold-500 font-light">eficácia no dia a dia.</span>
               </h2>
               <div className="space-y-6 text-cashmere-500/85 text-[15px] leading-relaxed font-light font-sans text-balance">
                 <p>
-                  Sob a liderança da advogada <strong className="text-white font-medium">Dra. Wellem Dias</strong>, a Dias Advocacia atua com foco em soluções jurídicas responsáveis, eficientes e perfeitamente adequadas à realidade de seus clientes.
+                  Somos uma banca multidisciplinar estruturada para atender o pequeno e médio empresário e pessoas físicas que necessitem de soluções sólidas, francas e integradas à realidade complexa do mercado de negócios.
                 </p>
                 <p>
-                  Nosso método assenta-se em quatro pilares inegociáveis: primeiro, a <strong className="text-white font-medium">compreensão do problema</strong> real de forma atenta; segundo, a <strong className="text-white font-medium">definição da melhor estratégia</strong> legal; terceiro, a <strong className="text-white font-medium">execução precisa e documentada</strong>; e, por fim, o acompanhamento próximo com <strong className="text-white font-medium">comunicação clara e transparente</strong>.
+                  Surgido sob a motivação e integridade de seu fundador, <strong className="text-white font-medium">José Santana de Jesus</strong> (in memorian, OAB/PB 5.815), nosso escritório é hoje capitaneado pelo diretor jurídico <strong className="text-white font-medium">Dr. Jaksson Santana de Jesus (OAB/PB 19.538)</strong>. Primamos pela lisura, pela excelência em Direito Material e por uma notável e combativa prática processual.
                 </p>
                 <p>
-                  Operamos com atendimento boutique em Campina Grande/PB e ampla projeção nacional, integrando governança corporativa, planejamento patrimonial e defesa contundente perante os órgãos administrativos e judiciais.
+                  Com sede corporativa no prestigiado Duo Corporate Tower - DCT em João Pessoa/PB, integramos uma afinada equipe multidisciplinar e criativa, operando em estrutura híbrida e focada em gerar valor e conformidade a cada plano de ação.
                 </p>
               </div>
               
@@ -813,7 +801,7 @@ export function Home() {
                 </div>
                 <h2 className="text-4xl md:text-5xl font-display font-light text-white leading-tight">
                   Localização estratégica <br />
-                  <span className="font-serif italic text-gold-500 font-light">em Campina Grande/PB.</span>
+                  <span className="font-serif italic text-gold-500 font-light">em João Pessoa/PB.</span>
                 </h2>
               </div>
 
@@ -824,7 +812,7 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">Endereço Oficial</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">Av. Floriano Peixoto, 546 - Sala 302<br />Centro, Campina Grande - PB<br />CEP: 58400-110</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">R. Emp. Clóvis Rolim, 2051, T Sul, 22ª Andar - SL 2201.<br />Duo Corporate Tower - DCT, João Pessoa - PB<br />CEP 58028-873</p>
                   </div>
                 </div>
 
@@ -834,7 +822,7 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">Canais de Contato</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">+55 (83) 99876-5432 • WhatsApp Central<br />Atendimento das 08h às 18h</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">(83) 2106-5680 • Central Telefônica / WhatsApp<br />Segunda à sexta-feira, de 9:00 às 18:00</p>
                   </div>
                 </div>
 
@@ -844,14 +832,14 @@ export function Home() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium text-sm tracking-wide mb-1 font-sans">E-mail</h4>
-                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">atendimento@diasadvocacia.adv.br</p>
+                    <p className="text-cashmere-500/70 text-xs leading-relaxed font-light font-sans">escritorio@stna.adv.br</p>
                   </div>
                 </div>
               </div>
 
               {/* Botão de Direcionamento Direto no Maps */}
               <a 
-                href="https://share.google/OqIFiSvPTdZo2Divq"
+                href="https://www.google.com/maps?ll=-7.156633,-35.372381&z=14&t=m&hl=pt-BR&gl=US&mapclient=embed&q=DCT+Santana+Advogados"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:text-gold-500 transition-colors pt-4 group"
@@ -861,11 +849,11 @@ export function Home() {
               </a>
             </div>
 
-            {/* Coluna 2: Google Maps Iframe Estilizado Escuro (Afonso Campos 304, CG) */}
+            {/* Coluna 2: Google Maps Iframe Estilizado Escuro (DCT João Pessoa) */}
             <div className="lg:col-span-7 h-[450px] md:h-[550px] w-full relative border border-white/[0.05] shadow-2xl">
               <iframe
-                title="Google Maps Hato Advogados"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.406981440786!2d-35.8848772!3d-7.2287239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aee0f9191d9b3d%3A0x6e2a2223fa8c9d4b!2sR.%20Afonso%20Campos%2C%20304%20-%20Centro%2C%20Campina%20Grande%20-%20PB%2C%2058400-235!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                title="Google Maps Santana Advogados"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2709230557434!2d-34.8582239!3d-7.1003714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace799147eb221%3A0x9a84a6c4295e2d1d!2sDuo%20Corporate%20Tower%20-%20DCT!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
                 className="w-full h-full border-0 dark-map absolute inset-0 z-10"
                 allowFullScreen={false}
                 loading="lazy"
@@ -902,10 +890,10 @@ export function Home() {
               Pronto para defender seus <span className="font-serif italic text-gold-500">interesses legais?</span>
             </h2>
             <p className="text-cashmere-500/70 text-[15px] font-light mb-10 max-w-2xl mx-auto leading-relaxed text-balance">
-              Agende uma consulta estratégica com nossa banca de advogados seniores e garanta a melhor estruturação e defesa patrimonial para seu negócio.
+              Agende uma consulta estratégica com nossa banca multidisciplinar e garanta a melhor estruturação e defesa patrimonial para você e sua empresa.
             </p>
             <a 
-              href="https://wa.me/5583998765432?text=Ol%C3%A1%2C%20DIAS%20Advocacia.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico%20especializado."
+              href="https://wa.me/558321065680?text=Ol%C3%A1%2C%20Santana%20Advogados.%20Gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico%20especializado."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gold-500 text-brand-900 font-semibold uppercase text-[10px] tracking-[0.25em] hover:bg-gold-400 transition-all duration-500 ease-out hover:scale-[1.02] shadow-xl shadow-gold-500/10"

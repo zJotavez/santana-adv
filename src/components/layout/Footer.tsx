@@ -13,14 +13,13 @@ export function Footer() {
               <Logo size={32} textColor="text-white group-hover:text-gold-500" />
             </Link>
             <p className="text-cashmere-500/70 text-xs leading-relaxed font-light">
-              Defendendo seus direitos com estratégia jurídica sob medida, segurança patrimonial e excelência técnica nos tribunais superiores.
+              Banca estruturada para atender o pequeno e médio empresário e pessoas físicas com orientação franca, segura, eficaz e visão global de negócios.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/wellemdias_advocacia/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/5 flex items-center justify-center text-cashmere-500/60 hover:text-gold-500 hover:border-gold-500/50 transition-all duration-500">
-                <Instagram size={16} />
-              </a>
-              <a href="https://www.instagram.com/wellemdias_advocacia/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/5 flex items-center justify-center text-cashmere-500/60 hover:text-gold-500 hover:border-gold-500/50 transition-all duration-500">
-                <Linkedin size={16} />
+              <a href="https://www.youtube.com/@santanaadv" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-white/5 flex items-center justify-center text-cashmere-500/60 hover:text-gold-500 hover:border-gold-500/50 transition-all duration-500" title="YouTube">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.003 3.003 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.003 3.003 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -41,12 +40,12 @@ export function Footer() {
           <div>
             <h4 className="font-display font-medium text-white mb-6 uppercase tracking-[0.2em] text-xs">Especialidades</h4>
             <ul className="space-y-3.5">
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Direito Empresarial</Link></li>
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Regularização Imobiliária</Link></li>
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Direito Bancário</Link></li>
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Direito de Família</Link></li>
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Previdenciário & Aposentadoria</Link></li>
-              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Defesa Criminal</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Contencioso Civil & Admin</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Empresarial & Societário</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Imobiliário & Contratos</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Tributário & Previdenciário</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Trabalhista & Emprego</Link></li>
+              <li><Link to="/atuacao" className="text-cashmere-500/70 hover:text-gold-500 transition-colors text-xs tracking-wide">Família & Inventários</Link></li>
             </ul>
           </div>
 
@@ -57,32 +56,32 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold-500 shrink-0 mt-0.5" />
                 <a 
-                  href="https://share.google/OqIFiSvPTdZo2Divq" 
+                  href="https://www.google.com/maps?ll=-7.156633,-35.372381&z=14&t=m&hl=pt-BR&gl=US&mapclient=embed&q=DCT+Santana+Advogados" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-cashmere-500/70 text-xs leading-relaxed hover:text-gold-500 transition-colors"
                 >
-                  Av. Floriano Peixoto, 546 - Sala 302, Centro, Campina Grande/PB - CEP: 58400-110
+                  R. Emp. Clóvis Rolim, 2051, T Sul, 22ª Andar - SL 2201. João Pessoa - PB. CEP 58028-873
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-gold-500 shrink-0" />
                 <a 
-                  href="https://wa.me/5583998765432" 
+                  href="https://wa.me/558321065680" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-cashmere-500/70 text-xs hover:text-gold-500 transition-colors"
                 >
-                  +55 (83) 99876-5432
+                  (83) 2106-5680 (WhatsApp)
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-gold-500 shrink-0" />
                 <a 
-                  href="mailto:contato@diasadvocacia.adv.br" 
+                  href="mailto:escritorio@stna.adv.br" 
                   className="text-cashmere-500/70 text-xs hover:text-gold-500 transition-colors"
                 >
-                  contato@diasadvocacia.adv.br
+                  escritorio@stna.adv.br
                 </a>
               </li>
             </ul>
@@ -91,7 +90,7 @@ export function Footer() {
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-cashmere-500/40 text-[10px] tracking-wider">
-            &copy; {new Date().getFullYear()} DIAS ADVOCACIA. TODOS OS DIREITOS RESERVADOS.
+            &copy; {new Date().getFullYear()} SANTANA ADV. CNPJ 46.445.555/0001-48. TODOS OS DIREITOS RESERVADOS.
           </p>
           <div className="flex items-center gap-6 text-[10px] text-cashmere-500/40 tracking-wider">
             <Link to="/privacidade" className="hover:text-gold-500 transition-colors">POLÍTICA DE PRIVACIDADE</Link>

@@ -22,33 +22,33 @@ function SEOManager() {
   const location = useLocation();
 
   useEffect(() => {
-    let title = "DIAS Advocacia | Advocacia de Elite & Corporativa";
-    let description = "DIAS Advocacia é uma banca jurídica boutique sob a liderança da Dra. Wellem Dias. Atuação em Direito Empresarial, Bancário, de Família, Previdenciário e Trabalhista.";
+    let title = "Santana Advogados Associados | Advocacia Consultiva & Litigiosa";
+    let description = "Santana Advogados Associados é uma banca estruturada para atender o pequeno e médio empresário e pessoas físicas em João Pessoa - PB. Excelência desde 1990.";
 
     switch (location.pathname) {
       case "/":
-        title = "DIAS Advocacia | Advocacia de Elite & Corporativa";
-        description = "DIAS Advocacia é uma banca jurídica boutique sob a liderança da Dra. Wellem Dias. Especialistas em Direito Empresarial, Bancário, de Família, Previdenciário e Trabalhista em Campina Grande/PB.";
+        title = "Santana Advogados Associados | Advocacia Consultiva & Litigiosa";
+        description = "Banca estruturada para atender o pequeno e médio empresário e pessoas físicas que necessitem de orientação franca, segura e eficaz em João Pessoa - PB.";
         break;
       case "/sobre":
-        title = "Nossa História & Valores | DIAS Advocacia";
-        description = "Conheça a história, o método rigoroso de trabalho e os pilares de transparência e excelência da DIAS Advocacia em Campina Grande/PB.";
+        title = "Nossa História & Valores | Santana Advogados Associados";
+        description = "Conheça a história da Santana Advogados, fundada em 1990 pelo Dr. José Santana de Jesus, e nosso compromisso com a lisura e qualidade jurídica.";
         break;
       case "/advogados":
-        title = "Nossa Banca de Advogados | DIAS Advocacia";
-        description = "Conheça nosso corpo jurídico de elite: Dra. Wellem Dias, Dra. Ana Beatriz e Dr. João Victor. Profissionais altamente qualificados para proteger seus interesses.";
+        title = "Nossos Advogados | Santana Advogados Associados";
+        description = "Conheça nosso corpo jurídico altamente qualificado liderado pelo Diretor Jurídico Dr. Jaksson Santana de Jesus.";
         break;
       case "/atuacao":
-        title = "Áreas de Atuação Jurídica | DIAS Advocacia";
-        description = "Oferecemos assessoria jurídica de alto padrão em Direito Empresarial, Regularização Imobiliária, Direito Bancário, Família, Previdenciário e Trabalhista.";
+        title = "Áreas de Atuação | Santana Advogados Associados";
+        description = "Conheça nossas divisões jurídicas: Contencioso Civil & Administrativo, Empresarial, Societário & Imobiliário, Tributário, Previdenciário, Processo Disciplinar e Arbitragem.";
         break;
       case "/blog":
-        title = "Inteligência Jurídica & Notícias | DIAS Advocacia";
-        description = "Acompanhe artigos informativos, novidades jurisprudenciais e inteligência jurídica escritas diretamente pela nossa banca de advogados seniores.";
+        title = "Artigos & Publicações | Santana Advogados Associados";
+        description = "Acompanhe artigos informativos, notícias jurisprudenciais e inteligência jurídica escritas diretamente pela nossa banca de advogados.";
         break;
       case "/contato":
-        title = "Fale com um Especialista | DIAS Advocacia";
-        description = "Entre em contato direto com a nossa banca boutique no Centro de Campina Grande/PB e agende uma consulta estratégica presencial ou virtual.";
+        title = "Fale com um Especialista | Santana Advogados Associados";
+        description = "Entre em contato com nossa banca no Duo Corporate Tower - DCT em João Pessoa - PB e agende uma consulta estratégica presencial ou virtual.";
         break;
       default:
         break;
@@ -68,6 +68,20 @@ function SEOManager() {
     
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute("content", description);
+
+    // Atualizar Twitter Cards
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute("content", title);
+
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute("content", description);
+
+    // Atualizar Link Canonical
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      const origin = window.location.origin;
+      canonicalLink.setAttribute("href", `${origin}${location.pathname}`);
+    }
   }, [location]);
 
   return null;
